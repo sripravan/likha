@@ -1,0 +1,7 @@
+{% include 'partials/header.twig' %}
+{% for slug, article in articles %}
+<a href="{{ '/blog/' ~ slug }}"><h1>{{ article.meta.title }}</h1></a>
+<b>{{ article.meta.date }}</b>
+<p>{{ article.content | slice(0, 300) | raw }}</p>
+{% endfor %}
+{% include 'partials/footer.twig' %}

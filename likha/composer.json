@@ -1,0 +1,11 @@
+{
+  "name" : "Likha",
+
+  "description": "Likha is a very simple PHP 7 based blogging system.",
+
+  "require" : {
+    "phroute/phroute" : "^2.1",
+    "twig/twig" : "^2.0",
+    "mnapoli/front-yaml": "^1.6"
+  }
+}

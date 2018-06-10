@@ -1,0 +1,6 @@
+{% include 'partials/header.twig' with {'title': article.meta.title} %}
+<h1>{{ article.meta.title }}</h1>
+<b>{{ article.meta.date }}</b>
+<hr>
+{{ article.content | raw }}
+{% include 'partials/footer.twig' %}
