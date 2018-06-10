@@ -42,7 +42,6 @@ namespace Likha
         echo $response;
       } 
     }
-    
   }
 }
 
