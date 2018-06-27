@@ -1,8 +1,14 @@
 {
-  "name" : "Likha",
-
+  "name": "likha/likha",
   "description": "Likha is a very simple PHP 7 based blogging system.",
-
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sri Pravan Paturi",
+      "email": "pravanpaturi@gmail.com"
+    }
+  ],
   "require" : {
     "phroute/phroute" : "^2.1",
     "twig/twig" : "^2.0",
