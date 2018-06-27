@@ -3,7 +3,7 @@ function likha_autoloader($classString){
   $namespaceList = explode('\\', $classString);
   if($namespaceList[0] == 'Likha')
   {
-    if($type = strtolower($namespaceList[1]))
+    if($type = $namespaceList[1])
     {
       if($class = $namespaceList[2])
       {

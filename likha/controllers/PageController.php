@@ -5,12 +5,12 @@ namespace Likha\Controllers
 
   class PageController
   {
-    public function about()
+    public function about() : View
     {
       return new View('about.twig');
     }
 
-    public function projects()
+    public function projects() : View
     {
       return new View('projects.twig');
     }

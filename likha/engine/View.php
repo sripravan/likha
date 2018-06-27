@@ -25,7 +25,7 @@ namespace Likha\Engine
     {
       $this->filename = $filename;
       $this->variables = $variables;
-      $this->twig = new Twig_Environment(new Twig_Loader_Filesystem(__DIR__ . '/../views'));
+      $this->twig = new Twig_Environment(new Twig_Loader_Filesystem(Path::absolute('views')));
     }
 
     public function __toString()

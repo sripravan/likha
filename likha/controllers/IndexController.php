@@ -2,16 +2,17 @@
 namespace Likha\Controllers
 {
   use \Likha\Engine\View;
+  use \Likha\Engine\Path;
   use \Likha\Models\Article;
   use \Mni\FrontYAML\Parser;
   use \FilesystemIterator;
 
   class IndexController
   {
-    public function show()
+    public function show() : View
     {
       $parser = new Parser();
-      $iterator = new FilesystemIterator(__DIR__ . '/../articles');
+      $iterator = new FilesystemIterator(Path::absolute('articles'));
       $articles = [];
 
       foreach($iterator as $item){
