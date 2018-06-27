@@ -1,5 +1,5 @@
 <?php
-require_once 'likha/vendor/autoload.php';
+require_once 'vendor/autoload.php';
 require_once 'likha/engine/autoload.php';
 require_once 'likha/app.php';
 
